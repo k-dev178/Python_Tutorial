@@ -1,0 +1,20 @@
+# 파이썬 문법
+
+> © 2026 ksj. All rights reserved. 자세한 사항은 [LICENSE](LICENSE) 참고.
+
+---
+
+## 목차
+
+| 파트 | 제목 |
+|---|---|
+| [Part 0](part0_환경세팅.md) | 환경 세팅 |
+| [Part 1](part1_입출력과변수.md) | 입출력과 변수 |
+| [Part 2](part2_연산자.md) | 연산자 |
+| [Part 3](part3_반복문.md) | 반복문 |
+| [Part 4](part4_조건문.md) | 조건문 |
+| [Part 5](part5_리스트와문자열.md) | 리스트와 문자열 |
+| [Part 6](part6_함수와딕셔너리.md) | 함수와 딕셔너리 |
+| [Part 7](part7_시험유형별풀이전략.md) | 시험 유형별 풀이 전략 |
+| [Part 8](part8_요약.md) | 요약 |
+| [Part 9](part9_연습문제.md) | 연습문제 |
