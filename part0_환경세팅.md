@@ -42,8 +42,8 @@
 
 ## Homebrew 설치
 
-* terminal/iterm2에서 다음 명령어 복붙
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+* terminal/iterm2에서 다음 명령어 복붙 : <br>
+```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
 <br>
 * 자세한 내용은 아래에서
 [https://brew.sh/](https://brew.sh/)
