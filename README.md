@@ -1,9 +1,5 @@
 # 파이썬 문법
 
-> 👉 [https://k-dev178.github.io/Python_Tutorial/](https://k-dev178.github.io/Python_Tutorial/) 에서 보면 훨씬 편합니다 (모바일에서도 깔끔).
-
-> © 2026 ksj. All rights reserved. 자세한 사항은 [LICENSE](LICENSE) 참고.
-
 ---
 
 ## 목차

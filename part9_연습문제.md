@@ -4,7 +4,7 @@
 
 ---
 
-## 9.1 수행평가 연습문제 (코드 작성형 5문제, 권장 시간 30분)
+## 9.1 코드 작성형 연습문제 (5문제, 권장 시간 30분)
 
 ### 문제 1. 두 정수 합
 두 정수를 입력받아 합을 출력하시오.
@@ -58,7 +58,7 @@ B
 
 ---
 
-## 9.2 수행평가 연습문제 — 해설
+## 9.2 코드 작성형 연습문제 — 해설
 
 ### 문제 1
 ```python
@@ -149,10 +149,10 @@ print(max_val, max_idx + 1)
 
 ---
 
-## 9.3 기말고사 연습문제 (20문항)
+## 9.3 코드 분석형 연습문제 (20문항)
 
 > 코드를 보고 출력을 예측하거나 빈칸을 채우거나 버그를 고치는 문제.
-> 정답은 토글로 가려져 있음. 직접 풀어본 뒤 펼쳐 확인.
+> 직접 풀어본 뒤 정답 확인.
 
 ### 유형 A. 코드 읽기 — 결과 예측 (8문제)
 
@@ -160,12 +160,11 @@ print(max_val, max_idx + 1)
 ```python
 print(7 // 2, 7 % 2)
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 3 1
 ```
-</details>
 
 #### Q2
 ```python
@@ -173,26 +172,24 @@ a = "10"
 b = "20"
 print(a + b)
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 1020
 ```
 > 문자열 이어붙이기.
-</details>
 
 #### Q3
 ```python
 n = 1234
 print(n // 100 % 10)
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 2
 ```
 > 백의 자리.
-</details>
 
 #### Q4
 ```python
@@ -201,12 +198,11 @@ for i in range(1, 6):
     total += i
 print(total)
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 15
 ```
-</details>
 
 #### Q5
 ```python
@@ -218,36 +214,33 @@ elif x > 3:
 else:
     print("C")
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 B
 ```
-</details>
 
 #### Q6
 ```python
 nums = [10, 20, 30, 40, 50]
 print(nums[1:4])
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 [20, 30, 40]
 ```
-</details>
 
 #### Q7
 ```python
 s = "hello"
 print(s[::-1])
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 olleh
 ```
-</details>
 
 #### Q8
 ```python
@@ -257,13 +250,12 @@ for i in range(1, 21):
         count += 1
 print(count)
 ```
-<details><summary>정답 (출력)</summary>
 
+**정답 (출력)**
 ```
 6
 ```
 > 3, 6, 9, 12, 15, 18 — 6개.
-</details>
 
 ---
 
@@ -278,7 +270,8 @@ for i in range(1, ___):
     total += i
 print(total)
 ```
-<details><summary>정답</summary><code>n+1</code></details>
+
+**정답**: `n+1`
 
 #### Q10
 정수 5개의 평균을 구하는 코드:
@@ -289,7 +282,8 @@ for _ in range(5):
     total += n
 print(total ___ 5)
 ```
-<details><summary>정답</summary><code>/</code></details>
+
+**정답**: `/`
 
 #### Q11
 3의 배수만 출력하는 코드:
@@ -298,7 +292,8 @@ for i in range(1, 31):
     if ___:
         print(i)
 ```
-<details><summary>정답</summary><code>i % 3 == 0</code></details>
+
+**정답**: `i % 3 == 0`
 
 #### Q12
 리스트의 최댓값을 찾는 코드:
@@ -310,7 +305,8 @@ for x in nums:
         max_val = x
 print(max_val)
 ```
-<details><summary>정답</summary><code>></code></details>
+
+**정답**: `>`
 
 #### Q13
 짝홀 판별 코드:
@@ -321,7 +317,8 @@ if ___ == 0:
 else:
     print("홀수")
 ```
-<details><summary>정답</summary><code>n % 2</code></details>
+
+**정답**: `n % 2`
 
 #### Q14
 "hello"의 길이를 출력:
@@ -329,7 +326,8 @@ else:
 s = "hello"
 print(___)
 ```
-<details><summary>정답</summary><code>len(s)</code></details>
+
+**정답**: `len(s)`
 
 ---
 
@@ -343,7 +341,8 @@ for i in range(1, 10):
     total += i
 print(total)
 ```
-<details><summary>정답</summary><code>range(1, 10)</code>은 10을 포함 안 함 → <code>range(1, 11)</code>로 수정. 결과 55.</details>
+
+**정답**: `range(1, 10)`은 10을 포함하지 않음 → `range(1, 11)`로 수정. 결과 55.
 
 #### Q16
 무한루프가 발생하는 코드:
@@ -352,7 +351,8 @@ i = 1
 while i <= 5:
     print(i)
 ```
-<details><summary>정답</summary><code>i += 1</code> 누락. while 안에 추가.</details>
+
+**정답**: `i += 1` 누락. while 안에 추가.
 
 #### Q17
 두 수의 합을 출력하려는 코드:
@@ -361,7 +361,8 @@ a = input()
 b = input()
 print(a + b)
 ```
-<details><summary>정답</summary><code>int(input())</code>로 형변환. 안 그러면 문자열 이어붙이기.</details>
+
+**정답**: `int(input())`로 형변환. 안 그러면 문자열 이어붙이기 됨.
 
 #### Q18
 1~10 합을 구하는데 결과가 항상 10:
@@ -372,7 +373,8 @@ for i in range(1, 11):
     total += i
 print(total)
 ```
-<details><summary>정답</summary>for 안의 <code>total = 0</code>을 삭제 (매번 리셋되고 있음).</details>
+
+**정답**: for 안의 `total = 0`을 삭제 (매번 리셋되고 있음).
 
 #### Q19
 조건문 에러:
@@ -381,7 +383,8 @@ x = 10
 if x = 10:
     print("ten")
 ```
-<details><summary>정답</summary><code>=</code> → <code>==</code>로 수정.</details>
+
+**정답**: `=` → `==`로 수정.
 
 #### Q20
 인덱스 에러:
@@ -389,20 +392,21 @@ if x = 10:
 nums = [1, 2, 3]
 print(nums[3])
 ```
-<details><summary>정답</summary>인덱스는 0~2까지만. <code>nums[2]</code> 또는 <code>nums[-1]</code>로 수정.</details>
+
+**정답**: 인덱스는 0~2까지만. `nums[2]` 또는 `nums[-1]`로 수정.
 
 ---
 
 ## 9.4 채점 기준
 
-### 수행평가 연습문제 (50점)
+### 코드 작성형 (50점)
 - 문제 1: 5점
 - 문제 2: 5점
 - 문제 3: 10점
 - 문제 4: 15점
 - 문제 5: 15점
 
-### 기말고사 연습문제 (50점)
+### 코드 분석형 (50점)
 - Q1~Q8: 각 3점 (24점)
 - Q9~Q14: 각 3점 (18점)
 - Q15~Q20: 각 약 1.3점 (8점)
@@ -415,50 +419,3 @@ print(nums[3])
 | 70~89 | 합격선 안정권 | 약한 부분 Part 1~6 복습 |
 | 50~69 | 합격 가능, 보강 필요 | 7유형(Part 8)을 손으로 다시 적기 |
 | 50 미만 | 기초 보강 필요 | Part 1~4 반복 + 누적 패턴 4가지 외우기 |
-
----
-
-## 9.5 학습 순환
-
-이 연습문제를 다 풀고 나면:
-1. 틀린 문제의 해당 Part로 돌아가기
-2. 그 단원의 패턴을 손으로 다시 코딩(타이핑)
-3. 연습문제를 다시 시간 재고 풀어보기
-
-이 사이클을 1번 더 돌리면 시험 점수가 눈에 띄게 올라간다.
-
----
-
-## 9.6 추가학습(선택)
-만약 코딩을 제대로 해보고싶다?
-
-### 코드업 100제 풀어보기
-파이썬 체화하기 아주 좋다.
-(100제라고 써있는데, 98문제..)
-
-https://codeup.kr/problemsetsol.php?psid=33
-
-
-### 자료구조 + 알고리즘 공부
-- 자료구조: 데이터를 효율적으로 저장하는법.
-- 알고리즘: 속도와 자원효율성을 높이기 위해 코드를 효율적으로 쓰는 방법.
-
-위에 2개를 공부하면 대회에 참가 할 수 있다.
-
-### 딥러닝/머신러닝(AI)
-AI 안에 머신러닝, 그 안에 딥러닝이 들어간다.
-
-**머신러닝**
-데이터로 패턴 학습 (스팸 분류, 집값 예측 등). 파이썬 + `scikit-learn`. 표 형태 데이터로 시작.
-
-**딥러닝**
-신경망 기반. 이미지·음성·자연어 (ChatGPT의 핵심). `PyTorch` / `TensorFlow`.
-입문 강의: [모두를 위한 딥러닝](https://hunkim.github.io/ml/)
-
-### 웹
-프론트는 HTML / CSS / JavaScript, 백엔드는 파이썬 `Flask` / `Django`.
-직접 사이트나 서비스 만들고 싶을 때.
-
-### 데이터
-엑셀로 부족할 때. `pandas`로 정리, `matplotlib`로 시각화.
-공공데이터 포털에서 데이터 받아 직접 분석해보면 재밌음.

@@ -42,10 +42,8 @@
 
 ## Homebrew 설치
 
-* terminal/iterm2에서 다음 명령어 복붙 : <br>
-```python
+* terminal/iterm2에서 다음 명령어 복붙
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
 <br>
 * 자세한 내용은 아래에서
 [https://brew.sh/](https://brew.sh/)
@@ -79,3 +77,54 @@ brew install python
 | `command not found: python` (Mac) | `python3`로 입력 (Mac은 python3가 표준) |
 | 설치 중 권한 오류 | 관리자 권한으로 실행 / 비밀번호 입력 |
 | `brew: command not found` (Mac) | Homebrew 미설치 → [brew.sh](https://brew.sh) 안내대로 설치 후 재시도 |
+
+---
+
+# IDLE로 코드 실행하기
+
+**IDLE**은 파이썬 설치하면 같이 깔리는 기본 코드 편집기.
+처음에는 IDLE 하나로 충분하다.
+
+## IDLE 열기
+
+- **윈도우**: 시작 메뉴에서 `IDLE` 검색 → `IDLE (Python 3.x)` 클릭
+- **맥**: Spotlight(⌘+Space)에서 `IDLE` 검색 → 실행
+
+열면 `>>>` 가 보이는 창이 뜬다. 이게 **Shell(셸) 창**.
+
+## 방법 1. Shell에 바로 입력 (간단 테스트용)
+
+`>>>` 옆에 코드를 한 줄씩 입력하고 엔터.
+
+```
+>>> print("hello")
+hello
+>>> 1 + 2
+3
+```
+
+한 줄짜리 확인할 때 편하다. 단, 창을 닫으면 코드는 사라짐.
+
+## 방법 2. 파일로 저장해서 실행 (실제 과제용)
+
+1. IDLE Shell 창에서 메뉴 **File → New File** (또는 `Ctrl+N` / `⌘+N`)
+2. 새 창이 뜨면 코드 작성:
+   ```python
+   print("hello")
+   print(1 + 2)
+   ```
+3. **File → Save** (또는 `Ctrl+S` / `⌘+S`) → 파일명 `test.py`로 저장
+4. **Run → Run Module** 또는 **F5** 키
+5. Shell 창에 결과 출력:
+   ```
+   hello
+   3
+   ```
+
+> 실제 시험·과제는 **방법 2**로 작성한다. `.py` 파일로 저장해야 코드를 다시 열고 수정할 수 있음.
+
+## 주의사항
+
+- **저장 안 하고 F5**: 저장하라는 창 뜸 → 저장하면 그대로 실행됨
+- **확장자 빼먹기**: 꼭 `.py`로 저장. 다른 확장자면 파이썬으로 인식 안 됨
+- **에러 메시지가 빨간 글씨로 뜸**: 당황하지 말고 마지막 줄 읽기. `SyntaxError`, `NameError` 같은 단어가 어떤 종류 에러인지 알려준다.
